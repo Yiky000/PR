@@ -66,19 +66,16 @@
 
     .car{
         width: 300px; height: auto;
+        animation-direction: normal;
         animation-name: myani;
         animation-duration: 5s;
+        animation-iteration-count: infinite;
 
     }
 
     @keyframes myani{
-        0% {
-        -webkit-transform: translateX(0px) translateY(0px) scale(1);
-        }
-
-    100% {
-        -webkit-transform: translateX(-100px) translateY(0px) scale(1);
-        }
+        from {transform: translateX(0px) translateY(0px);}
+        to {transform: translateX(-500%) translateY(0px);}
     }
     
 </style>
@@ -243,14 +240,17 @@
                             </button>
                         </div>
                     </div>
-                    <div align="right" class="tmi_3">
-                        <img class="car" src="img/1st_class.jpg">
-
-
+                    <div class="tmi_3">
+                        
+                        <p></p>
+                        <p>그리고 최근에 1종 보통으로 면허를 땄습니다!</p> 
+                        <img align="right" class="car" src="img/1st_class.jpg">
+                        
                     </div>
                 </div>
             
             </div>
+
 
         </div> <!-- id="mybody"끝 회색 배경색 깔린 본문 영역 -->
 
